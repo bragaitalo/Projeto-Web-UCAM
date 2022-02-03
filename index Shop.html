@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- template blog -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+    <!-- template blog -->
+    <link rel="icon" href="../../../../favicon.ico">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <title>Maison Mulot</title>
+    <!-- *** Mudei o href do codigo fonte original para realizar a alteração no CSS baixado do bootstrap ***
+     " HREF ANTIGO: https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" "
+    -->
+
+    <!-- Minha inclusão CSS e JavaScript -->
+    <link rel="stylesheet" href="../Projeto-Web-UCAM/css%202/bootstrap%20(P%C3%81GINA%20SHOP).css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- //// -->
+
+    <!-- CSS do Template Albúm -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+  </head>
+    
+  </head>
+  <body>
+    <!-- Este trecho serve para utilizar o logo das redes sociais no footer da página -->  
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+  <symbol id="facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+  </symbol>
+  <symbol id="instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+  </symbol>
+  <symbol id="twitter" viewBox="0 0 16 16">
+    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+  </symbol>
+</svg>
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+          </div>
+          <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="../Projeto-Web-UCAM/index%20Home.html" name="Shop"><img src="../Projeto-Web-UCAM/Imagens/Logo%20Header%20Maison%20Mulot.png" title="Home"></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2 border-top border-bottom">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 nav-text text-dark" href="../Projeto-Web-UCAM/index%20Home.html">Home</a>
+          <a class="p-2 nav-text text-dark" href="../Projeto-Web-UCAM/index%20Home.html#Hist%C3%B3ria">História</a>
+          <a class="p-2 nav-text text-dark" href="#Shop">Shop</a>
+          <a class="p-2 nav-text text-dark" href="../Projeto-Web-UCAM/index%20Home.html#Localiza%C3%A7%C3%A3o">Localização</a>
+          <a class="p-2 nav-text text-dark" href="../Projeto-Web-UCAM/index%20Home.html#Contato">Contato</a>
+        </nav>
+      </div>
+
+      <!-- Banner/Poster Principal -->
+      <div class="jumbotron p-3 p-md-5 text-black rounded bg-dark">
+        <div class="col-md-6 px-0">
+        <h1 class="display-4-txtrans-banner font-italic">Shop</h1> 
+        <!-- TEXTO ABAIXO INVISÍVEL -->
+        <h1 class="display-4-2-txtrans-banner font-italic">Desde 1796 entre a moda e as tradições</h1>
+          <pre>
+
+          </pre>
+           <!-- TEXTO ABAIXO INVISÍVEL -->
+          <p class="lead-txtrans-banner my-3">Clássica confeitaria francesa. Pães, bolos, doces, croissants recém-saídos de fartas fornadas... Tudo isso na Maison Mulot, onde você encontra Pâtisserie e Boulangerie que exala frescor.</p>
+           <!-- TEXTO ABAIXO INVISÍVEL -->
+          <p class="lead-txtrans-banner mb-0">Continue lendo...</a></p>
+        </div>
+      </div>
+      <!--  ///// -->
+
+    <div class="container marketing">
+    <!-- IMAGENS ARREDONDADAS (MOSTRUÁRIO) template carousel -->
+    <div class="row">
+     <!-- Primeira Imagem Arredondada -->
+     <div class="col-lg-4">
+        <center>
+        <img src="../Projeto-Web-UCAM/Imagens/Produtos/boulangerie%201.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <span style="color: #808000;"><h4 class="display-4-img-redondas font-italic"><p>Boulangerie</p></h4></span>
+        <p class="lead my-3">Fornadas de exalar frescor a cada duas horas.</p>
+        </center>
+      </div><!-- /.col-lg-4 -->
+      <!-- Segunda Imagem Arredondada -->
+      <div class="col-lg-4">
+        <center>
+        <img src="../Projeto-Web-UCAM/Imagens/Produtos/macaron%201.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+
+        <span style="color: #B8860B;"><h2 class="display-4-img-redondas font-italic"><p>Macaron</p></h2></span>
+        <p class="lead my-3">Cores & Sabores</p>
+        </center>
+      </div><!-- /.col-lg-4 -->
+      <!-- Terceira Imagem Arredondada -->
+      <div class="col-lg-4">
+        <center>
+        <img src="../Projeto-Web-UCAM/Imagens/Produtos/tarte%20aux%20framboises%201.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <span style="color: #8B4513;"><h2 class="display-4-img-redondas font-italic"><p>Pâtisserie</p></h2></span>
+        <p class="lead my-3">Arte nobre que transforma poucos ingredientes em prazer.</p>
+        </center>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="featurette-divider"> <!-- mesma função do border-top -->
+  </div><!-- /.container --> <!-- FIM IMAGENS REDONDAS -->
+
+<!-- PAINEL DE PRODUTOS -->
+<main role="main" class="container">
+ <span style="color: #8B4513;"><h1 class="display-4 font-italic"><p>Pâtisserie</p></h1></span>
+  <div class="row">
+    <h6><p class="lead my-3">&nbsp;&nbsp;Oferecemos uma vasta gama de doces e tortas de pequeno e grande formato.</p></h6>
+    <!-- Primeira linha de itens de PRODUTOS - PÂTISSERIE -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/amaryllis-a-partager%20EDITADA.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1 font-italic">
+              <p>Amaryllis a Partager</p>
+              <p class="card-body-10-1">Uma massa requintada e saborosa composta por dois biscoitos macaroon polvilhados com frutos secos e nogado, guarnecido com creme de baunilha leve e framboesas frescas: deixe-se levar tentado!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$60,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/charlotte-framboise%20EDITADA.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1 font-italic">
+              
+              <p>Charlotte Framboise</p>
+              <p class="card-body-10-2">Desfrute da combinação de um biscoito de colher mole, um creme bávaro de baunilha, framboesas e servido com um coulis de framboesa. Uma sobremesa gourmet e frutada!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a name="MagieNoire"><!-- ANCORA UTILIZADA AQUI PARA ENQUADRAR DE FORMA PERFEITA -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$45,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/tarte-aux-framboises-individuelle%20EDITADA.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1-2 font-italic">
+              
+              <p>Tarte Aux Framboises Individuelle</p>
+              <p class="card-body-10-3">A torta é feita com uma massa de shortbread elaborada e trabalhada pela nossa equipe de confeiteiros, decorada com um leve creme de amêndoa e deliciosas framboesas frescas cuidadosamente selecionadas</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a name="SaintHonore"><!-- ANCORA UTILIZADA AQUI PARA ENQUADRAR DE FORMA PERFEITA -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>                 </div>
+                <a style="color: #FF0000;">R$50,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </br>
+
+    <!-- Segunda linha de itens de PRODUTOS - PÂTISSERIE -->
+  <div class="row">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/Magie%20Noire%20EDITADA.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1 font-italic" >
+              <p>Magie Noire</p>
+              <p class="card-body-10-4">Este bolo é composto por uma mousse de chocolate e uma bolacha de amêndoa macia. Ele contém avelãs inteiras e é cercado por um biscoito crocante de frutas secas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$42,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/Millefeuille%20EDITADA.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1 font-italic">
+              <p>Millefeuille</p>
+              <p class="card-body-10-5">A massa folhada é trabalhada manualmente pelos nossos patissiers para criar uma massa única excepcional recheada com natas batidas e creme de baunilha!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$38,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/P%C3%A2tisserie/Saint%20Honore%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-1 font-italic">
+              <p>Saint Honore</p>
+              <p class="card-body-10-6">O inconfundível Saint Honoré: uma massa folhada, uma massa choux decorada com um delicado e untuoso creme de massa e um creme chantilly para ainda mais indulgência.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$35,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </br>
+
+  <!-- Terceira linha de itens de PRODUTOS - BOULANGERIE -->
+  <span style="color: #808000;"><h1 class="display-4 font-italic"><p>Boulangerie</p></h1></span>
+ <div class="row">
+    <h6><p class="lead my-3">&nbsp;&nbsp;Pães e doces são feitos à mão a cada duas horas pelo Chef Baker Gregory e sua equipe.</p></h6>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/Cake%20Aux%20Fruits%20Confits%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Cake Aux Fruits Confits</p>
+              <p class="card-body-10-7">Um bolo tradicional com frutas cristalizadas, macio e saboroso. Perfeito para um café da manhã gourmet ou um lanche para compartilhar.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$27,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/Cake%20Praline%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Cake Praline</p>
+              <p class="card-body-10-8">Um tradicional bolo de praliné, macio e saboroso. Perfeito para um café da manhã gourmet ou um lanche para compartilhar.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$25,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/cake-marbre-chocolat-vanille%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Cake Marbre Chocolat Vanille</p>
+              <p class="card-body-10-9">Um tradicional bolo marmorizado de chocolate-baunilha, macio e saboroso. Perfeito para um café da manhã gourmet ou um lanche para compartilhar que certamente trará lembranças de infância.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$23,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </br>
+    <!-- Quarta linha de itens de PRODUTOS - BOULANGERIE -->
+  <div class="row">
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/Miche%20Au%20Levain%20Bio%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Miche Au Levain Bio</p>
+              <p class="card-body-10-10">2KG - Pão integral de fermento orgânico.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$18,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/Etna%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Etna</p>
+              <p class="card-body-10-10">Chocolate suave com um toque de chocolate branco.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$11,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Boulangerie/Pain%20Au%20Chocolat%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-2 font-italic">
+              <p>Pain Au Chocolat</p>
+              <p class="card-body-10-11">Massa folhada com manteiga fresca recheada com um palito gourmet de chocolate preto. Perfeito para o café da manhã ou chá da tarde.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$14,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </br>
+    <!-- Quinta linha de itens de PRODUTOS - MACARONS -->
+     <span style="color: #B8860B;"><h1 class="display-4 font-italic"><p>Macaron</p></h1></span>
+    <div class="row">
+    <h6><p class="lead my-3">&nbsp;&nbsp;Venha descobrir vinte sabores na loja ao longo das estações, tudo feito pelo nosso chef Jean-Michel.</p></h6>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Macaron%20Caramel%20Au%20Beurre%20Sal%C3%A9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Macaron Caramel Au Beurre Salé</p>
+              <p class="card-body-10-12">Delicadeza individual de caramelo e manteiga salgada de forma redonda com coração derretendo e perfumado, dentro de uma concha fina e estaladiça, ligeiramente gorda, combinando sabores e cores harmoniosas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$9,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Macaron%20Cholat%20Rouge%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Macaron Chocolat Rouge</p>
+              <p class="card-body-10-13">Delicadeza individual de chocolate de formato redondo com coração fundente e perfumado, dentro de uma concha fina e estaladiça, levemente rechonchuda, combinando sabores e cores harmoniosas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$7,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Macaron%20Nougat%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Macaron Nougat</p>
+              <p class="card-body-10-13">Delicadeza individual de nougat redondo com coração fundente e perfumado, dentro de uma concha fina e estaladiça, ligeiramente arredondada, combinando sabores e cores harmoniosos.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$9,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </br>
+    <!-- Sexta linha de itens de PRODUTOS - MACARONS -->
+    <div class="row">
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Macaron%20Chocolat%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Macaron Café</p>
+              <p class="card-body-10-13">Delicadeza individual de café, de formato redondo, com o coração derretendo e perfumado, dentro de uma casca fina e crocante, levemente arredondada, combinando sabores e cores harmoniosos.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$7,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Macaron%20Pistache%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Macaron Pistache</p>
+              <p class="card-body-10-13">Delicadeza individual de pistache, de formato redondo, com o coração derretendo e perfumado, dentro de uma casca fina e crocante, levemente arredondada, combinando sabores e cores harmoniosos.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$7,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../Projeto-Web-UCAM/Imagens/Produtos/Macarons/Coffret%20De%20Macarons%20EDITADA.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+
+            <div class="card-body-3 font-italic">
+              <p>Coffret De Macarons</p>
+              <p class="card-body-10-14">Nossos macaroons são feitos por nossos chefs confeiteiros Astrid e Youssef em nossa oficina de confeitaria. Existem muitos sabores para descobrir e, a cada temporada, os nossos chefes pasteleiros oferecem-lhe algo novo para descobrir! Componha você mesmo sua própria caixa com as fragrâncias de sua escolha.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                </div>
+                <a style="color: #FF0000;">R$80,00</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</main>
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="../Projeto-Web-UCAM/index%20Home.html" class="nav-link px-2 text-dark">Home</a></li>
+        <li class="nav-item"><a href="../Projeto-Web-UCAM/index%20Home.html#Localiza%C3%A7%C3%A3o" class="nav-link px-2 text-dark">Localização</a></li>
+        <li class="nav-item"><a href="../Projeto-Web-UCAM/index%20Home.html#Contato" class="nav-link px-2 text-dark">Contato</a></li>
+      </ul>
+      <a href="#Shop" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><img src="../Projeto-Web-UCAM/Imagens/Logo%20Header%20Maison%20Mulot.png"></svg>
+      </a>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://twitter.com/?lang=pt" target="_blank"><svg class="bi" width="50" height="30"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/?lang=pt" target="_blank"><svg class="bi" width="50" height="30"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://pt-br.facebook.com/?lang=pt" target="_blank"><svg class="bi" width="50" height="30"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+     </footer>
+  </div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
